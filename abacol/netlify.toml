@@ -1,0 +1,4 @@
+# Only deploy this site when files in this folder change (saves Netlify credits)
+[build]
+  publish = "."
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- ."
