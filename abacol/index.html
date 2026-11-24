@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fibraplas Concrete | Juan Pablo Constain — Abacol</title>
+<meta name="description" content="Fibraplas Concrete: fibra para pisos de concreto que reemplaza la malla electrosoldada. Representante: Juan Pablo Constain.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#1a1716">
+<meta property="og:title" content="Fibraplas Concrete | Juan Pablo Constain">
+<meta property="og:description" content="Reemplace la malla electrosoldada en sus pisos de concreto. Cotice con su representante.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#1a1716;--panel:#232020;--panel2:#2b2726;--line:#3a3433;--txt:#f5f1ec;--muted:#b3a9a2;
+    --red:#b3261e;--red2:#8f1d17;--yel:#f1b83a;--concrete:#8d8a86;--sans:'Archivo',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--bg)}
+  body{font-family:var(--sans);color:var(--txt);min-height:100vh;
+    padding:calc(16px + env(safe-area-inset-top)) 14px calc(28px + env(safe-area-inset-bottom));
+    background:radial-gradient(700px 400px at 100% -10%,#b3261e33,transparent 70%),radial-gradient(600px 400px at -10% 30%,#f1b83a14,transparent 70%),var(--bg)}
+  .wrap{max-width:440px;margin:0 auto}
+  .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+  .brand{font:900 13px var(--sans);letter-spacing:.2em}
+  .brand small{display:block;font:500 9.5px var(--mono);letter-spacing:.14em;color:var(--yel);margin-top:3px}
+  .lang{display:flex;border:1px solid var(--line);border-radius:99px;overflow:hidden}
+  .lang button{background:none;border:0;color:var(--muted);font:700 11px var(--sans);padding:6px 10px;cursor:pointer}
+  .lang button.on{background:var(--yel);color:#1a1716}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 30px 70px -30px #000}
+  .hero{position:relative;padding:22px 18px 20px;background:linear-gradient(150deg,var(--red),var(--red2));overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-40px;top:-40px;width:200px;height:200px;border-radius:50%;
+    background:repeating-linear-gradient(45deg,#ffffff10 0 6px,transparent 6px 14px)}
+  .eyebrow{font:700 10px var(--mono);letter-spacing:.18em;color:var(--yel);text-transform:uppercase;position:relative}
+  .hero h1{font:900 29px/1.02 var(--sans);letter-spacing:-.01em;margin-top:10px;text-transform:uppercase;position:relative}
+  .hero h1 span{color:var(--yel)}
+  .save{display:inline-flex;align-items:baseline;gap:8px;margin-top:14px;background:#1a1716cc;border:1px solid #ffffff22;border-radius:12px;padding:10px 14px;position:relative}
+  .save b{font:900 30px var(--sans);color:var(--yel)}
+  .save span{font:600 12.5px/1.3 var(--sans);max-width:170px}
+  .fn{font-size:10px;color:#ffffffa8;margin-top:8px;position:relative;line-height:1.4}
+  .profile{display:flex;gap:14px;align-items:center;padding:18px 18px 4px}
+  .avatar{width:72px;height:72px;border-radius:14px;flex:none;overflow:hidden;border:2px solid var(--yel)}
+  .avatar img{width:100%;height:100%;object-fit:cover}
+  .name{font:800 20px/1.1 var(--sans)}
+  .role{font-size:12.5px;color:var(--muted);margin-top:4px;line-height:1.35}
+  .role b{color:var(--yel);font-weight:700}
+  .primary{display:flex;align-items:center;justify-content:center;gap:10px;margin:16px 18px 0;background:var(--yel);color:#1a1716;border:0;border-radius:12px;padding:15px;font:800 15px var(--sans);text-decoration:none;cursor:pointer}
+  .primary svg{width:20px;height:20px}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:10px 18px 0}
+  .act{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:12px 4px 10px;display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--txt);text-decoration:none;font:600 11px var(--sans);cursor:pointer}
+  .act svg{width:21px;height:21px}
+  .act:active,.primary:active{transform:scale(.98)}
+  .section{padding:24px 18px 0}
+  .h{font:700 10.5px var(--mono);letter-spacing:.18em;color:var(--yel);text-transform:uppercase;margin-bottom:10px;display:flex;gap:8px;align-items:center}
+  .h::after{content:"";flex:1;height:1px;background:var(--line)}
+  .desc{font-size:14px;line-height:1.55;color:#ddd5ce}
+  .ben{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .b{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:13px 12px}
+  .b i{font-style:normal;font-size:19px}
+  .b strong{display:block;font-size:13.5px;margin-top:6px;font-weight:700}
+  .b small{display:block;font-size:11.5px;color:var(--muted);margin-top:3px;line-height:1.35}
+  .vs{width:100%;border-collapse:collapse;font-size:12.5px;background:var(--panel2);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .vs th,.vs td{padding:10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+  .vs tr:last-child td{border-bottom:0}
+  .vs th{font:700 10px var(--mono);letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
+  .vs td:nth-child(2){color:var(--yel);font-weight:600}.vs td:nth-child(3){color:var(--muted)}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{background:var(--panel2);border:1px solid var(--line);border-radius:99px;padding:7px 11px;font-size:12.5px;font-weight:600}
+  .steps{display:grid;gap:6px}
+  .st{display:flex;gap:12px;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:11px 12px}
+  .st .n{font:700 11px var(--mono);background:var(--red);color:#fff;border-radius:6px;padding:3px 7px;height:fit-content}
+  .st b{font-size:13.5px}
+  .st small{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+  .about{display:flex;gap:12px;align-items:center;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:12px}
+  .about .yr{font:900 22px var(--sans);color:var(--yel);flex:none}
+  .about p{font-size:12.5px;color:#ddd5ce;line-height:1.45}
+  .fn2{font-size:10.5px;color:var(--muted);line-height:1.45;margin-top:8px}
+  .ex td:nth-child(2){color:var(--yel);font-weight:800}.spec td:nth-child(3){color:var(--txt)}
+  .vs td:first-child{font-weight:700;color:var(--txt)}
+  .dl{display:grid;grid-template-columns:1fr 1fr;gap:8px}.dl a{background:var(--panel2);border:1px solid var(--yel);border-radius:12px;padding:12px;text-align:center;color:var(--txt);text-decoration:none;font-weight:700;font-size:13px}
+  .legal{margin-top:24px;border-top:1px solid var(--line);padding:14px 16px;display:flex;gap:12px;align-items:center}
+  .legal p{flex:1;font-size:10.5px;color:var(--muted);line-height:1.5}
+  .qrbtn{flex:none;background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:8px 10px;font:700 10px var(--mono);color:var(--txt);cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px}
+  .qrbtn svg{width:22px;height:22px}
+  .foot{text-align:center;color:var(--muted);font-size:11.5px;margin-top:18px;line-height:1.7}
+  .glitch{font:600 10px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:#8a807a;margin-top:6px}
+  .modal{position:fixed;inset:0;background:#1a1716d9;backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:20px;z-index:10}
+  .modal.on{display:flex}
+  .sheet{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px;max-width:320px;width:100%;text-align:center}
+  .sheet h3{font-size:16px;margin-bottom:4px}.sheet p{font-size:12.5px;color:var(--muted);margin-bottom:14px}
+  #qr{display:flex;justify-content:center;margin:0 auto 14px;padding:10px;background:#fff;border-radius:12px;width:fit-content}
+  .btns{display:flex;gap:8px}
+  .btns button{flex:1;border:1px solid var(--line);background:transparent;color:var(--txt);border-radius:10px;padding:11px;font:700 13px var(--sans);cursor:pointer}
+  .btns button.dark{background:var(--yel);color:#1a1716;border-color:var(--yel)}
+  .toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(20px);background:var(--yel);color:#1a1716;padding:10px 16px;border-radius:99px;font:700 13px var(--sans);opacity:0;transition:.25s;z-index:20}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="brand">FIBRAPLAS CONCRETE<small data-t="by"></small></div>
+    <div class="lang"><button data-l="es">ES</button><button data-l="en">EN</button></div>
+  </div>
+
+  <article class="card">
+    <div class="hero">
+      <div class="eyebrow" data-t="eyebrow"></div>
+      <h1 data-h="h1"></h1>
+      <div class="save"><b data-t="pct"></b><span data-t="saveTxt"></span></div>
+      <div class="fn" data-t="fn"></div>
+    </div>
+
+    <div class="profile">
+      <div class="avatar"><img src="data:image/webp;base64,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" alt="Juan Pablo Constain"></div>
+      <div><div class="name">Juan Pablo Constain</div><div class="role"><span data-t="role"></span><br><b data-t="rep"></b></div></div>
+    </div>
+
+    <a class="primary" id="quoteBtn" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+      <span data-t="quote"></span>
+    </a>
+    <div class="grid">
+      <a class="act" id="callBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span data-t="call"></span></a>
+      <a class="act" id="mailBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>E-mail</a>
+      <button class="act" id="saveBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg><span data-t="save"></span></button>
+      <button class="act" id="shareBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg><span data-t="share"></span></button>
+    </div>
+
+    <div class="section"><div class="h" data-t="hWhat"></div><p class="desc" data-t="what"></p></div>
+    <div class="section"><div class="h" data-t="hBen"></div><div class="ben" id="ben"></div></div>
+    <div class="section"><div class="h" data-t="hEx"></div><p class="desc" style="font-size:12.5px;margin-bottom:8px" data-t="ex"></p><table class="vs ex" id="ex"></table></div>
+    <div class="section"><div class="h" data-t="hVs"></div><table class="vs" id="vs"></table><p class="fn2" data-t="notes"></p></div>
+    <div class="section"><div class="h" data-t="hSpec"></div><table class="vs spec" id="spec"></table></div>
+    <div class="section"><div class="h" data-t="hDose"></div><p class="desc" style="font-size:12.5px;margin-bottom:8px" data-t="dose"></p><div class="steps" id="steps"></div><p class="desc" style="font-size:12px;margin-top:8px;color:var(--muted)" data-t="pack"></p></div>
+    <div class="section"><div class="h" data-t="hUse"></div><div class="chips" id="uses"></div></div>
+    <div class="section"><div class="h" data-t="hDl"></div><div class="dl"><a href="Fibraplas_Concrete_Ficha_Tecnica_ES.pdf" target="_blank" rel="noopener">📄 Ficha técnica (ES)</a><a href="Fibraplas_Concrete_Data_Sheet_EN.pdf" target="_blank" rel="noopener">📄 Data sheet (EN)</a></div></div>
+
+    <div class="legal"><p data-t="legal"></p>
+      <button class="qrbtn" id="qrBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3"/></svg>QR</button>
+    </div>
+  </article>
+
+  <div class="foot">Juan Pablo Constain · <span data-t="foot"></span><div class="glitch">Powered by The Glitch Crew</div></div>
+</div>
+
+<div class="modal" id="modal"><div class="sheet"><h3 data-t="qrTitle"></h3><p data-t="qrSub"></p><div id="qr"></div>
+  <div class="btns"><button id="copyBtn" data-t="copy"></button><button class="dark" id="closeBtn" data-t="close"></button></div></div></div>
+<div class="modal" id="vmodal"><div class="sheet"><h3 data-t="save"></h3><p data-t="vSub"></p>
+  <div class="btns"><button id="vCopy" data-t="copy"></button><button class="dark" id="vClose" data-t="close"></button></div></div></div>
+<div class="toast" id="toast"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+/* ============ EDIT YOUR DATA HERE ============ */
+const CARD = {
+  first:"Juan Pablo", last:"Constain",
+  phone:"+13059034791", phoneDisplay:"+1 (305) 903-4791", whatsapp:"13059034791",
+  email:"jp@juanpabloconstain.com",          // TODO: email for Abacol representation
+  url:"https://abacol.juanpabloconstain.com"
+};
+/* ============================================= */
+const T = {
+  es:{by:"Representante · Abacol",eyebrow:"Refuerzo para pisos de concreto",h1:"Reemplace la <span>malla electrosoldada</span>",
+    pct:"Hasta 50%",saveTxt:"de ahorro en costos de obra*",fn:"*Estimado con base en comparativos del fabricante. El ahorro real depende de cada proyecto; la dosificación se define con el departamento técnico.",
+    role:"Business Development & Sales",rep:"Representante autorizado · Fibraplas Concrete",
+    quote:"Cotizar por WhatsApp",call:"Llamar",save:"Guardar",share:"Compartir",
+    hWhat:"Qué es",what:"Fibraplas Concrete® es una macrofibra sintética estructural fabricada bajo ASTM C1116-10, Tipo 3. Se incorpora fácilmente al concreto, mejora sus propiedades y reemplaza la malla electrosoldada y las fibras metálicas, principalmente en pisos de concreto y mezzanines.",
+    hBen:"Beneficios",ben:[["🔁", "Reemplaza la malla", "Sin cortar, traslapar ni amarrar"], ["🧱", "Refuerzo 3D", "Distribuido en todo el concreto"], ["⏱️", "Hasta 20× más rápido", "1 persona, 15 min por mixer de 8 m³"], ["♻️", "PET reciclado", "Aprox. 50 botellas por kg; no se oxida"]],
+    hVs:"Fibraplas vs malla electrosoldada",vs:[["Criterio", "Fibraplas Concrete®", "Malla electrosoldada"], ["Desperdicio", "Ninguno: se dosifica exactamente lo que se requiere en la mixer.", "Mínimo 9% por traslapos, más cortes en columnas y bordes; se vuelve chatarra."], ["Transporte", "2 cajas de 24 kg reemplazan aprox. 12 mallas de 6 × 2.35 m; caben en un carro pequeño.", "Requiere camión de mínimo 6 m de largo."], ["Almacenamiento", "Hasta 80% menos espacio: en 1.2 m² cabe fibra para más de 3,000 m² de piso.", "Mínimo 14 m² para mallas de 6 × 2.35 m; difícil de descargar y mover."], ["Tiempo de aplicación", "1 persona, 15 minutos por mixer de 8 m³ (≈ 18 segundos por m²). Hasta 20× más eficiente.", "0.10 a 0.15 horas-hombre por m²: transportar, posicionar, traslapar, amarrar y cortar."], ["EPP y herramientas", "Casco y botas de seguridad.", "Casco, botas, gafas, guantes; pulidora, tijeras para acero, distanciadores y alambre."], ["Riesgos", "Bajos.", "Mayor riesgo de cortes, tropiezos y fatiga."], ["Tipo de refuerzo", "Tridimensional, distribuido en todo el concreto.", "Un solo plano; con frecuencia no queda en el tercio superior."], ["Fisuración**", "Reduce aprox. 80%.", "Reduce aprox. 20%."], ["Durabilidad", "No se oxida; sintética y resistente a álcalis. Aumenta la tenacidad del concreto.", "Acero sujeto a oxidación; puede llegar oxidada a obra."]],
+    hUse:"Aplicaciones",uses:["Concreto prefabricado", "Pisos industriales", "Steel deck", "Pavimentos rígidos", "Shotcrete", "Mezzanines"],
+
+    legal:"Juan Pablo Constain es representante comercial autorizado de Fibraplas Concrete®. Fibraplas Concrete® es una marca de Abacol.",
+    foot:"Miami, FL",qrTitle:"Escanee para cotizar",qrSub:"Apunte la cámara al código para abrir esta página.",copy:"Copiar",close:"Cerrar",
+    copied:"Copiado",noshare:"Link copiado para compartir",vSub:"Esta vista previa no permite descargar archivos. Copie los datos o abra la página desde abacol.juanpabloconstain.com.",
+    steps:[["Método pala", "Agua + piedra + arena + cemento + Fibraplas. Dispersar bien mientras el concreto está fluido."], ["Mezcladora portátil", "Agua + piedra + arena + cemento + Fibraplas. Mezclar 2 minutos en rotación."], ["Concreto premezclado (mixer)", "Mixer a máxima velocidad + Fibraplas según kg/m³. Mezclar 15 minutos en obra."]],
+    hEx:"Ejemplo de obra",
+    hSpec:"Información técnica",
+    hDose:"Dosificación y métodos",
+    hDl:"Descargas",
+    ex:"Placa de 600 m² (20 × 30 m), espesor 10 cm, 60 m³ de concreto.",
+    exT:[["", "Fibraplas Concrete®", "Malla electrosoldada 4.5 mm"], ["Cantidad", "192 kg (8 cajas de 24 kg)", "47 mallas de 6 × 2.35 m"], ["Peso del producto", "192 kg", "≈ 1,103 kg"], ["Ahorro en material", "≈ 66%", "—"], ["Ahorro total con instalación", "≈ 68%", "—"]],
+    spec:[["Concepto", "Unidad", "Valor"], ["Diámetro promedio", "µm", "600"], ["Tipo de macrofibra", "—", "Sintética"], ["Longitud", "mm (in)", "55 (2.16)"], ["Dosificación frecuente", "kg/m³ (lb/yd³)", "3.2 (5.4)"], ["Resistencia máx. a tensión", "MPa (psi)", "≈ 524 (75,999)"], ["Módulo de elasticidad promedio", "GPa (ksi)", "≈ 4.8 (696)"], ["Punto de fusión", "°C (°F)", "260 (500)"], ["Relación de aspecto", "—", "92"], ["Resistencia a álcalis", "—", "Alta"]],
+    dose:"La dosificación frecuente es de 3.2 kg/m³ (5.4 lb/yd³). Cada proyecto tiene una dosificación específica, definida con asesoría del departamento técnico.",
+    pack:"Paquetes solubles de aprox. 143 g (5 oz) que se agregan directamente a la mezcla. Cajas de 24 kg (53 lb) con aprox. 168 paquetes. Medidas de caja: 25 × 48 × 30 cm (9.8 × 19 × 12 in).",
+    notes:"*Ahorro estimado con base en comparativos del fabricante; el ahorro real depende del diseño, precios locales y mano de obra de cada proyecto. **Datos del fabricante. La información técnica es orientativa y no reemplaza el diseño estructural del proyecto.",
+    wa:"Hola Juan Pablo, quiero cotizar Fibraplas Concrete para un piso de concreto."},
+  en:{by:"Representative · Abacol",eyebrow:"Concrete floor reinforcement",h1:"Replace <span>welded wire mesh</span>",
+    pct:"Up to 50%",saveTxt:"savings on job-site costs*",fn:"*Estimated from manufacturer comparisons. Actual savings depend on each project; dosage is set with the technical department.",
+    role:"Business Development & Sales",rep:"Authorized representative · Fibraplas Concrete",
+    quote:"Get a quote on WhatsApp",call:"Call",save:"Save",share:"Share",
+    hWhat:"What it is",what:"Fibraplas Concrete® is a structural synthetic macro fiber manufactured under ASTM C1116-10, Type 3. It is easily incorporated into concrete, improves its properties and replaces welded wire mesh and steel fibers, mainly in concrete floors and mezzanines.",
+    hBen:"Benefits",ben:[["🔁", "Replaces mesh", "No cutting, overlapping or tying"], ["🧱", "3D reinforcement", "Distributed throughout the concrete"], ["⏱️", "Up to 20× faster", "1 person, 15 min per 10 yd³ truck"], ["♻️", "Recycled PET", "Approx. 50 bottles per kg; rust-free"]],
+    hVs:"Fibraplas vs welded wire mesh",vs:[["Criteria", "Fibraplas Concrete®", "Welded wire mesh"], ["Waste", "None: dose exactly what is needed in the truck.", "At least 9% from overlaps, plus cuts at columns and edges; ends up as scrap."], ["Transport", "2 boxes (106 lb) replace approx. 12 mesh sheets; fits in a small car.", "Requires a truck at least 20 ft long."], ["Storage", "Up to 80% less space: 13 ft² holds fiber for 32,000+ ft² of floor.", "At least 150 ft² for 19.7 × 7.7 ft sheets; hard to unload and move."], ["Application time", "1 person, 15 minutes per 10 yd³ truck (≈ 2 seconds per ft²). Up to 20× more efficient.", "0.10 to 0.15 man-hours per m² (≈ 11 ft²): carry, position, overlap, tie and cut."], ["PPE & tools", "Hard hat and safety boots.", "Hard hat, boots, glasses, gloves; grinder, rebar cutters, chairs/spacers and tie wire."], ["Risks", "Low.", "Higher risk of cuts, trips and fatigue."], ["Reinforcement type", "Three-dimensional, distributed throughout the concrete.", "Single plane; often not positioned in the upper third."], ["Cracking**", "Reduces approx. 80%.", "Reduces approx. 20%."], ["Durability", "Rust-free; synthetic and alkali-resistant. Increases concrete toughness.", "Steel subject to rust; may arrive rusted on site."]],
+    hUse:"Applications",uses:["Precast concrete", "Industrial floors", "Steel deck", "Rigid pavements", "Shotcrete", "Mezzanines"],
+
+    legal:"Juan Pablo Constain is an authorized sales representative for Fibraplas Concrete®. Fibraplas Concrete® is a trademark of Abacol.",
+    foot:"Miami, FL",qrTitle:"Scan for a quote",qrSub:"Point your camera at the code to open this page.",copy:"Copy",close:"Close",
+    copied:"Copied",noshare:"Link copied to share",vSub:"This preview can't download files. Copy the details or open the page at abacol.juanpabloconstain.com.",
+    steps:[["Shovel method", "Water + stone + sand + cement + Fibraplas. Disperse well while the concrete is fluid."], ["Portable mixer", "Water + stone + sand + cement + Fibraplas. Mix for 2 minutes while rotating."], ["Ready-mix truck", "Drum at full speed + Fibraplas per lb/yd³. Mix for 15 minutes on site."]],
+    hEx:"Job example",
+    hSpec:"Technical information",
+    hDose:"Dosage & methods",
+    hDl:"Downloads",
+    ex:"6,458 ft² slab (600 m²), 3.9 in (10 cm) thick, 78.5 yd³ (60 m³) of concrete.",
+    exT:[["", "Fibraplas Concrete®", "Welded wire mesh 4.5 mm"], ["Quantity", "423 lb (8 boxes of 53 lb)", "47 sheets of 19.7 × 7.7 ft"], ["Product weight", "423 lb", "≈ 2,432 lb"], ["Material savings", "≈ 66%", "—"], ["Total savings incl. installation", "≈ 68%", "—"]],
+    spec:[["Property", "Unit", "Value"], ["Average diameter", "µm", "600"], ["Macro fiber type", "—", "Synthetic"], ["Length", "in (mm)", "2.16 (55)"], ["Typical dosage", "lb/yd³ (kg/m³)", "5.4 (3.2)"], ["Max. tensile strength", "psi (MPa)", "75,999 (≈ 524)"], ["Average modulus of elasticity", "ksi (GPa)", "696 (≈ 4.8)"], ["Melting point", "°F (°C)", "500 (260)"], ["Aspect ratio", "—", "92"], ["Alkali resistance", "—", "High"]],
+    dose:"Typical dosage is 5.4 lb/yd³ (3.2 kg/m³). Each project has a specific dosage, defined with the technical department.",
+    pack:"Water-soluble packs of approx. 5 oz (143 g), added directly to the mix. Boxes of 53 lb (24 kg) with approx. 168 packs. Box size: 9.8 × 19 × 12 in (25 × 48 × 30 cm).",
+    notes:"*Savings estimated from manufacturer comparisons; actual savings depend on each project's design, local pricing and labor. **Manufacturer data. Technical information is for guidance only and does not replace the project's structural design.",
+    wa:"Hi Juan Pablo, I'd like a quote for Fibraplas Concrete for a concrete floor."}
+};
+let lang=(navigator.language||"es").toLowerCase().startsWith("es")?"es":"en";
+try{const s=localStorage.getItem("abaLang");if(s)lang=s;}catch(e){}
+const $=id=>document.getElementById(id);const full=CARD.first+" "+CARD.last;
+const pageUrl=()=>CARD.url||location.href.split("#")[0];
+function render(){const t=T[lang];document.documentElement.lang=lang;
+  document.querySelectorAll("[data-t]").forEach(el=>{if(typeof t[el.dataset.t]==="string")el.textContent=t[el.dataset.t];});
+  document.querySelector("[data-h=h1]").innerHTML=t.h1;
+  document.querySelectorAll(".lang button").forEach(b=>b.classList.toggle("on",b.dataset.l===lang));
+  $("ben").innerHTML=t.ben.map(b=>`<div class="b"><i>${b[0]}</i><strong>${b[1]}</strong><small>${b[2]}</small></div>`).join("");
+  const tbl=(id,rows)=>{$(id).innerHTML=rows.map((r,i)=>"<tr>"+r.map(c=>i?`<td>${c}</td>`:`<th>${c}</th>`).join("")+"</tr>").join("");};tbl("ex",t.exT);tbl("spec",t.spec);
+  $("vs").innerHTML=t.vs.map((r,i)=>"<tr>"+r.map(c=>i?`<td>${c}</td>`:`<th>${c}</th>`).join("")+"</tr>").join("");
+  $("uses").innerHTML=t.uses.map(u=>`<span class="chip">${u}</span>`).join("");
+  $("steps").innerHTML=t.steps.map((s,i)=>`<div class="st"><span class="n">0${i+1}</span><div><b>${s[0]}</b><small>${s[1]}</small></div></div>`).join("");
+  $("quoteBtn").href="https://wa.me/"+CARD.whatsapp+"?text="+encodeURIComponent(t.wa);}
+$("callBtn").href="tel:"+CARD.phone;$("mailBtn").href="mailto:"+CARD.email+"?subject="+encodeURIComponent("Fibraplas Concrete");
+function toast(m){const t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove("on"),1800);}
+async function copy(text,m){try{await navigator.clipboard.writeText(text);toast(m);}catch(e){toast(text);}}
+const inViewer=!!(window.claude&&claude.use);
+$("saveBtn").onclick=()=>{if(inViewer){$("vmodal").classList.add("on");return;}window.location.href="contact.vcf";};
+$("vCopy").onclick=()=>copy(full+"\nFibraplas Concrete · Abacol\n"+CARD.phoneDisplay+"\n"+CARD.email,T[lang].copied);
+$("vClose").onclick=()=>$("vmodal").classList.remove("on");
+$("shareBtn").onclick=async()=>{try{if(navigator.share){await navigator.share({title:"Fibraplas Concrete | "+full,url:pageUrl()});return;}}catch(e){if(e.name==="AbortError")return;}copy(pageUrl(),T[lang].noshare);};
+let qrMade=false;
+$("qrBtn").onclick=()=>{$("modal").classList.add("on");if(!qrMade&&window.QRCode){new QRCode($("qr"),{text:pageUrl(),width:200,height:200,colorDark:"#1a1716",colorLight:"#ffffff",correctLevel:QRCode.CorrectLevel.M});qrMade=true;}};
+$("closeBtn").onclick=()=>$("modal").classList.remove("on");
+$("modal").onclick=e=>{if(e.target.id==="modal")$("modal").classList.remove("on");};
+$("copyBtn").onclick=()=>copy(pageUrl(),T[lang].copied);
+document.querySelectorAll(".lang button").forEach(b=>b.onclick=()=>{lang=b.dataset.l;try{localStorage.setItem("abaLang",lang)}catch(e){}render();});
+render();
+</script>
+</body>
+</html>
