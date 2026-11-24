@@ -52,6 +52,7 @@
   .rule{--g:linear-gradient(135deg,#0b1a2e,#1d3a66)}
   .ai{--g:linear-gradient(135deg,#1a1033,#3b1f7a 60%,#0f3a44)}
   .crg{--g:linear-gradient(135deg,#1b1813,#3d3324 60%,#5a4a2e)}
+  .aba{--g:linear-gradient(135deg,#2a1210,#8f1d17 60%,#b3261e)}
   .save{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;margin-top:18px;background:var(--txt);color:var(--bg);border:0;border-radius:14px;padding:15px;font:700 15px var(--sans);cursor:pointer}
   .save svg{width:18px;height:18px}
   .row{display:flex;gap:8px;margin-top:8px}
@@ -110,6 +111,12 @@
     <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
   </a>
 
+  <a class="biz aba" id="abaLink">
+    <div class="ic"><svg viewBox="0 0 32 32" fill="none"><rect x="5" y="20" width="22" height="5" rx="1" fill="#8d8a86"/><path d="M7 19l4-9M12 19l3-11M17 19l2-10M22 19l3-8" stroke="#f1b83a" stroke-width="2" stroke-linecap="round"/></svg></div>
+    <div class="bt"><b>Fibraplas Concrete</b><span data-t="abaD"></span><em data-t="abaR"></em></div>
+    <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+  </a>
+
   <button class="save" id="saveBtn">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
     <span data-t="save"></span>
@@ -149,6 +156,7 @@ const CARD = {
   rule: "https://logistics.juanpabloconstain.com",
   ai: "https://ai.juanpabloconstain.com",
   realty: "https://realty.juanpabloconstain.com",
+  abacol: "https://abacol.juanpabloconstain.com",
   url: "https://juanpabloconstain.com"
 };
 /* ============================================= */
@@ -158,6 +166,7 @@ const T = {
     ruleD:"Carga marítima, aérea y de proyectos desde Miami al mundo.",ruleR:"Sales Director",
     aiD:"Agentes de IA, automatización y generación de leads.",aiR:"Founder & CEO",
     crgD:"Compra, venta e inversión en bienes raíces en Miami.",crgR:"Broker & Founder",
+    abaD:"Fibra para concreto que reemplaza la malla electrosoldada · Abacol.",abaR:"Business Development",
     save:"Guardar contacto",share:"Compartir",foot:"Miami, Florida",
     qrTitle:"Escanea para conectar",qrSub:"Apunta la cámara al código para abrir esta página.",copy:"Copiar",close:"Cerrar",
     copied:"Copiado",saved:"Contacto descargado",noshare:"Link copiado para compartir",vSub:"Esta vista previa no permite descargar archivos. Copia los datos o abre la página desde juanpabloconstain.com."},
@@ -166,6 +175,7 @@ const T = {
     ruleD:"Ocean, air and project cargo from Miami to the world.",ruleR:"Sales Director",
     aiD:"AI agents, automation and lead generation.",aiR:"Founder & CEO",
     crgD:"Buy, sell and invest in Miami real estate.",crgR:"Broker & Founder",
+    abaD:"Concrete fiber that replaces welded wire mesh · Abacol.",abaR:"Business Development",
     save:"Save contact",share:"Share",foot:"Miami, Florida",
     qrTitle:"Scan to connect",qrSub:"Point your camera at the code to open this page.",copy:"Copy",close:"Close",
     copied:"Copied",saved:"Contact downloaded",noshare:"Link copied to share",vSub:"This preview can't download files. Copy the details or open the page at juanpabloconstain.com."}
@@ -179,12 +189,12 @@ function render(){const t=T[lang];document.documentElement.lang=lang;
   document.querySelectorAll("[data-t]").forEach(el=>{if(typeof t[el.dataset.t]==="string")el.textContent=t[el.dataset.t];});
   document.querySelectorAll(".lang button").forEach(b=>b.classList.toggle("on",b.dataset.l===lang));}
 $("waBtn").href="https://wa.me/"+CARD.whatsapp;$("callBtn").href="tel:"+CARD.phone;$("mailBtn").href="mailto:"+CARD.email;$("liBtn").href=CARD.linkedin;
-$("ruleLink").href=CARD.rule;$("aiLink").href=CARD.ai;$("crgLink").href=CARD.realty;
+$("ruleLink").href=CARD.rule;$("aiLink").href=CARD.ai;$("crgLink").href=CARD.realty;$("abaLink").href=CARD.abacol;
 function toast(m){const t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove("on"),1800);}
 async function copy(text,m){try{await navigator.clipboard.writeText(text);toast(m);}catch(e){toast(text);}}
 function vcard(){return["BEGIN:VCARD","VERSION:3.0",`N:${CARD.last};${CARD.first};;;`,`FN:${full}`,
   `TEL;TYPE=CELL,VOICE:${CARD.phone}`,`EMAIL;TYPE=WORK:${CARD.email}`,`URL:${CARD.website}`,`URL;TYPE=LinkedIn:${CARD.linkedin}`,
-  `NOTE:Rule Logistics · Mohahub · Constain Realty Group`,"END:VCARD"].join("\r\n");}
+  `NOTE:Rule Logistics · Mohahub · Constain Realty Group · Fibraplas Concrete`,"END:VCARD"].join("\r\n");}
 const inViewer=!!(window.claude&&claude.use);
 const dlP=inViewer?Promise.race([claude.use("downloads").catch(()=>null),new Promise(r=>setTimeout(()=>r(null),8000))]):Promise.resolve(null);
 const isIOS=/iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
