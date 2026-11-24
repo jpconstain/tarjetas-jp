@@ -105,9 +105,18 @@
     padding:10px 16px;border-radius:99px;font:600 13px var(--sans);opacity:0;transition:.25s;z-index:20}
   .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
 </style>
+<style>
+.jpnav{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin:0 0 12px;padding:2px 0;-webkit-overflow-scrolling:touch}
+.jpnav::-webkit-scrollbar{display:none}
+.jpnav a{flex:none;font:600 12px/1 system-ui,-apple-system,sans-serif;color:#ffffffcc;text-decoration:none;padding:8px 12px;border-radius:99px;background:#ffffff14;border:1px solid #ffffff22;white-space:nowrap}
+.jpnav a.on{background:#fff;color:#111;border-color:#fff}
+.jpnav a.home{padding:8px 10px}
+</style>
 </head>
 <body>
 <div class="wrap">
+  <nav class="jpnav" aria-label="Juan Pablo Constain"><a href="https://juanpabloconstain.com" class="home">⌂ Hub</a><a href="https://logistics.juanpabloconstain.com" class="">Logistics</a><a href="https://ai.juanpabloconstain.com" class="">AI</a><a href="https://realty.juanpabloconstain.com" class="on ">Realty</a><a href="https://abacol.juanpabloconstain.com" class="">Fibraplas</a></nav>
+
 
   <div class="top">
     <div class="brand">
